@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tasks7(Survey Form)</title>
+</head>
+<body>
+    <table align="center" cellpadding="10px" cellspacing="5px">
+        <form>
+            <h2 style="background-color: burlywood; text-align: center;">Survey Form</h2>
+            <tr>
+                <td colspan="2" align="center">let us know how we can improve freecodecamp</td>
+            </tr>
+            <tr>
+                <td align="right">*Name :</td>
+                <td><input type="text" size="30"></td>
+            </tr>
+            <tr>
+                <td align="right">*Email :</td>
+                <td><input type="email" size="30"></td>
+            </tr>
+            <tr>
+                <td align="right">Age :</td>
+                <td><input type="number" max="100" min="1" style="width: 240px;"></td>
+            </tr>
+            <tr>
+                <td align="right">Which option best describes your current role?</td>
+                <td>
+                    <select>
+                        <option>Student</option>
+                        <option>Emp</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">How likely is that you would recommend <br> free codecampe to a friend?</td>
+                <td> 
+                    <input type="radio" value="1" name="0">Definitely <br>
+                    <input type="radio" value="1" name="0">Maybe <br>
+                    <input type="radio" value="1" name="0">Not sure
+                </td>
+            </tr>
+            <tr>
+                <td align="right">What do yo like most in FCC :</td>
+                <td> 
+                    <select>
+                        <option disabled selected >Select an option</option>
+                        <option>challengers</option>
+                        <option>Projects</option>
+                        <option>Open Source</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Things that should be improved in the future <br> (check all that apply)</td>
+                <td>
+                    <input type="checkbox">Front-end Projects <br>
+                    <input type="checkbox">Back-end Projects <br>
+                    <input type="checkbox">Data Visualization
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
