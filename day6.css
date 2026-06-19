@@ -1,0 +1,25 @@
+/* selectors */
+/* 1.Elements selectors */
+h1{
+    color: rgb(117, 53, 8);
+}
+
+/* 2.id selectors(#) */
+#h1{
+    color: rgb(233, 233, 245);
+}
+
+/* 3.class selectors(.) */
+.h1{
+    color: rgb(2, 2, 63);
+}
+
+/* 4.univassal selectors(*) */
+*{
+    background-color: blue;
+}
+
+/* 5.Group selectors */
+h2,p{
+    color: burlywood;
+}
