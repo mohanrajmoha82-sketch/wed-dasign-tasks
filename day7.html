@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+        .circle{
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        .shape{
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+            border-radius: 50% 50% 0px;
+        }
+        .text-shadow{
+            text-shadow: 2px 2px 2px red;
+        }
+        .box-shadow{
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px red ;
+            margin-bottom: 20px;
+        }
+        .img img{
+            width: 200px;
+            height: 200px;
+            filter: drop-shadow(5px 10px 12px red);
+            margin-bottom: 30px;
+        }
+        button{
+            background-color: rgb(218, 101, 47);
+            width: 150px;
+            height: 35px;
+            border: none;
+            font-size: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px red;
+        }
+        button a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .text{
+            width: 500px;
+            height: 200px;
+            background-color: #ffffff;
+            text-align:justify;
+        }
+        .text p{
+            letter-spacing: 2px;
+            line-height: 20px;
+            word-spacing: 15px;
+            text-indent: 20px;
+            white-space: 1px;
+        }
+        .font{
+            width: 500px;
+            height: 200px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="circle"></div>
+    <div class="shape"></div>
+    <!-- shadow -->
+    <!-- 1.text shadow -->
+     <div class="text-shadow">
+        <h1>Wed Design </h1>
+     </div>   
+    <!-- 2.box shadow -->
+    <div class="box-shadow"> 
+        <h1>Web Design</h1>
+    </div>
+    <div class="img">
+        <img src="OIP (3).webp" alt="">
+    </div>
+    <button><a href="">Submit</a></button>
+    <!-- text -->
+    <div class="text">
+        <!-- 1.text-decoration 2.text-transform text-align -->
+        <p style="text-decoration: underline; text-transform: lowercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corrupti fugiat adipisci ducimus incidunt cupiditate distinctio quod, voluptate temporibus molestiae maxime dolor odit porro exercitationem iste natus voluptates nam ipsum.</p>
+    </div>
+    <div class="font">
+        <!-- 1.text-decoration 2.text-transform text-align -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corrupti fugiat adipisci ducimus incidunt cupiditate distinctio quod, voluptate temporibus molestiae maxime dolor odit porro exercitationem iste natus voluptates nam ipsum.</p>
+    </div>
+</body>
+</html>
