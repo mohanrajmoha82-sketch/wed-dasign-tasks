@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .link a:link{
+            color: yellow;
+        }
+        .hover a:hover{
+            color: brown;
+        }
+        .visited a:visited{
+            color: cadetblue;
+        } 
+        .inline div{
+            display:inline;
+            background-color: blue;
+        }
+        .inline-block{
+            display: inline-block;
+            width: 100px;
+            height: 300px;
+         }
+        .flex{
+            display: flex;
+            justify-content: space-around;
+        }
+         .grid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+         }
+        .nav{
+            display:flex;
+            list-style-type: none;
+            justify-content: space-between;
+           
+        }
+        .nav li{
+            background-color: black;
+            width: 100px;
+            height:25px ;
+            text-align: center;
+            border-radius: 20px;
+            padding-top: 5px;
+        }
+        .nav a{
+            color: wheat;
+            text-decoration: none;
+        }
+        .nav li:hover{
+            color: #000;
+            width: 150px;
+            height: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- css link -->
+    <div>
+        <div class="link"><a href="day2.html">click 1</a></div>
+        <div class="hover"><a href="day3.html">click 2</a></div>
+        <div class="visited"> <a href="day4.html">click 3</a></div>
+    </div>
+    <!-- display -->
+    <!-- 1.block -->
+     <div class="block">
+        <div class="box"><h1>HTML</h1></div>
+        <div class="box"><h1>CSS</h1></div>
+     </div>
+    <!-- 2.inline -->
+    <div class="inline">
+        <div class="box"><h1>HTML</h1></div>
+        <div class="box"><h1>CSS</h1></div>
+     </div>
+     <!-- 3.inline-block -->
+    <div class="inline-block">
+        <div class="box"><h1>HTML</h1></div>
+        <div class="box"><h1>CSS</h1></div>
+     </div>
+     <!-- 4.flex -->
+    <div class="flex">
+        <div class="box"><h1>HTML</h1></div>
+        <div class="box"><h1>CSS</h1></div>
+        <div class="box"><h1>HTML</h1></div>
+        <div class="box"><h1>CSS</h1></div>
+        <div class="box"><h1>HTML</h1></div>
+        <div class="box"><h1>CSS</h1></div>
+     </div>
+     <!-- 5.grid -->
+     <div  class="grid">
+        <div class="box"><h1>HTML</h1></div>
+        <div class="box"><h1>CSS</h1></div>
+        <div class="box"><h1>HTML</h1></div>
+        <div class="box"><h1>CSS</h1></div>
+        <div class="box"><h1>HTML</h1></div>
+        <div class="box"><h1>CSS</h1></div>
+     </div>
+     <!-- nav -->
+    <ul class="nav">
+        <li><a href="">home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">content</a></li>
+    </ul>
+
+</body>
+</html>
