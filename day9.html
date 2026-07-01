@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day9</title>
+    <style>
+        .visible{
+            background-color: blue;
+            width: 300px;
+            height: 250px;
+            overflow: visible;
+        } 
+        .hidden{
+            background-color: blue;
+            margin-top: 170px;
+            width: 300px;
+            height: 250px;
+            overflow: hidden;
+        } 
+        .scroll{
+            background-color: blue;
+            margin-top: 30px;
+            width: 300px;
+            height: 250px;
+            overflow: scroll;
+        } 
+        .auto{
+            background-color: blue;
+            margin-top: 30px;
+            width: 300px;
+            height: 250px;
+            overflow: auto;
+        } 
+        .box1{
+            position: static;
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            
+        }
+        .box2{
+            position: static;
+            background-color: rgb(0, 0, 0);
+            width: 200px;
+            height: 200px;
+        }
+        .box3 {
+            width: 180px;
+            height: 180px;
+            background-color: rgb(226, 9, 9);
+            position: relative;
+        }
+        .box4 {
+            width: 160px;
+            height: 160px;
+            background-color: rgb(135, 66, 66);
+            position: relative;
+            top: 10px;
+            left: 50px;
+        }
+        .box5 {
+            width: 180px;
+            height: 180px;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 5;
+            z-index: 2;
+        }
+        .box6 {
+            width: 160px;
+            height: 160px;
+            background-color: rgb(236, 138, 138);
+            position: absolute;
+            top: 5;
+            z-index: 3;
+        }
+        .box7 {
+            width: 180px;
+            height: 180px;
+            background-color: rgb(238, 85, 85);
+            position: fixed;
+
+        }
+        .box8 {
+            width: 160px;
+            height: 160px;
+            background-color: rgb(116, 12, 12);
+            position: sticky;
+            top: 5;
+            z-index: 3;
+        }
+      @media screen{
+            h1{
+                color: blue;
+            }
+        }
+        @media screen and (max-width:455px){
+            h1{
+                color: red;
+                background-color: #ffd500;
+            }
+        }
+        @media screen and (min-width:456px) and (max-width:745px){
+            h1{
+                color: rgb(105, 3, 102);
+                background-color: #61ffd0;
+                border: 2px solid black;
+            }
+        }
+        @media screen and (min-width:746px) and (max-width:1200px){
+            h1{
+                color: rgb(6, 7, 17);
+                background-color: #61ffd0;
+                border: 2px dashed black;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <div class="positioninng">
+        <div class="static">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="relative">
+            <div class="box3"></div>
+            <div class="box4"></div>
+        </div>
+        <div class="absolute">
+            <div class="box5"></div>
+            <div class="box6"></div>
+        </div>
+        <div class="fixed">
+            <div class="box7"></div>
+        </div>
+        <div class="sticty">
+            <div class="box8"></div>
+        </div>
+    </div>
+    <div class="overflow">
+        <div class="visible">
+            <h1>visible</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Cum nulla dignissimos temporibus itaque magni maiores error nobis exercitationem,
+            culpa voluptatibus, architecto, veniam quos nostrum reiciendis repellat. 
+            Excepturi quia cupiditate quas provident illo deserunt tempore modi eos dicta delectus, 
+            facere eum voluptate saepe consequatur harum quisquam veritatis laboriosam omnis et ullam suscipit?
+            Qui mollitia odio vitae eos ab, nulla temporibus. Tenetur veritatis officia expedita officiis? Reprehenderit incidunt,
+            ad repudiandae placeat nam iste, deserunt doloribus optio quisquam, quasi possimus nobis amet praesentium!
+            Laborum iusto atque in est at eligendi blanditiis ipsam animi voluptatem quidem adipisci vitae esse similique,
+            odit consequuntur non odio?</p>
+        </div>
+        <div class="hidden">
+            <h1>hidden</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Cum nulla dignissimos temporibus itaque magni maiores error nobis exercitationem,
+            culpa voluptatibus, architecto, veniam quos nostrum reiciendis repellat. 
+            Excepturi quia cupiditate quas provident illo deserunt tempore modi eos dicta delectus, 
+            facere eum voluptate saepe consequatur harum quisquam veritatis laboriosam omnis et ullam suscipit?
+            Qui mollitia odio vitae eos ab, nulla temporibus. Tenetur veritatis officia expedita officiis? Reprehenderit incidunt,
+            ad repudiandae placeat nam iste, deserunt doloribus optio quisquam, quasi possimus nobis amet praesentium!
+            Laborum iusto atque in est at eligendi blanditiis ipsam animi voluptatem quidem adipisci vitae esse similique,
+            odit consequuntur non odio?</p>
+        </div>
+        <div class="scroll">
+            <h1>scroll</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Cum nulla dignissimos temporibus itaque magni maiores error nobis exercitationem,
+            culpa voluptatibus, architecto, veniam quos nostrum reiciendis repellat. 
+            Excepturi quia cupiditate quas provident illo deserunt tempore modi eos dicta delectus, 
+            facere eum voluptate saepe consequatur harum quisquam veritatis laboriosam omnis et ullam suscipit?
+            Qui mollitia odio vitae eos ab, nulla temporibus. Tenetur veritatis officia expedita officiis? Reprehenderit incidunt,
+            ad repudiandae placeat nam iste, deserunt doloribus optio quisquam, quasi possimus nobis amet praesentium!
+            Laborum iusto atque in est at eligendi blanditiis ipsam animi voluptatem quidem adipisci vitae esse similique,
+            odit consequuntur non odio?</p>
+        </div>
+        <div class="auto">
+            <h1>auto</h1>
+                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Cum nulla dignissimos temporibus itaque magni maiores error nobis exercitationem,
+            culpa voluptatibus, architecto, veniam quos nostrum reiciendis repellat. 
+            Excepturi quia cupiditate quas provident illo deserunt tempore modi eos dicta delectus, 
+            facere eum voluptate saepe consequatur harum quisquam veritatis laboriosam omnis et ullam suscipit?
+            Qui mollitia odio vitae eos ab, nulla temporibus. Tenetur veritatis officia expedita officiis? Reprehenderit incidunt,
+            ad repudiandae placeat nam iste, deserunt doloribus optio quisquam, quasi possimus nobis amet praesentium!
+            Laborum iusto atque in est at eligendi blanditiis ipsam animi voluptatem quidem adipisci vitae esse similique,
+            odit consequuntur non odio?</p>
+</body>
+</html>
