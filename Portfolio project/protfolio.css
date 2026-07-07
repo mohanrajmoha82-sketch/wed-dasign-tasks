@@ -1,0 +1,402 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color:#05081c;
+    color: aliceblue;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+.menu{
+    display: flex;
+}
+.menu h1{
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu nav{
+    position: fixed;
+    margin-left: 400px;
+    justify-content:center;
+    margin-top: 25px;
+    background-color:#05081c;
+    
+}
+.menu nav a{
+    color: white;
+    padding-left: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    transition-duration:1s;
+    animation-name: c;
+    animation-duration: 2s;
+}
+@keyframes c {
+    0%{
+        color: rgb(16, 127, 224);
+        top:0;
+        left:0;
+    }
+    100%{
+        color: rgb(239, 239, 247);
+        top: 0;
+        left: 10px;
+    }
+}
+.content{
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 30px;
+    display: flex;
+}
+.content h3{
+    color: blueviolet;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.content h1{
+    font-size: 65px;
+    margin-top: 10px;
+}
+.content h2{
+    color: blueviolet;
+    margin-top: 10px;
+    font-size: 35px;
+}
+.content p{
+    width: 450px;
+    color:aliceblue;
+    margin-top: 25px;
+    margin-left: 0px;
+    font-size: 20px;
+}
+.content button{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.content  a{
+    text-decoration: none;
+}
+.button1, .button1 a{
+    background-color: blueviolet;
+}
+.button2{
+    margin-left: 40px;
+    box-shadow: 0px 0px 2px aliceblue;
+}
+.icon{
+    display: flex;
+    gap: 15px;
+}
+.icon a{
+    width: 20px;
+    text-align: center;
+    margin:5px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px aliceblue;
+}
+.icon i{
+    color: aliceblue;
+}
+.profile1 img{
+    margin-left: 250px;
+    margin-top: 30px;
+    width: 450px;
+    height: 450px;
+    border-radius: 250px;
+    border:6px solid blue;
+    filter: drop-shadow(0px 0px 10px blue);
+}
+.menu a:hover{
+    color: blue;
+    text-decoration: underline greenyellow;
+}
+.about{
+    margin-top: 150px;
+    display:flex;
+}
+.profile2 img{
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 2px white);
+}
+.content1{
+    margin-top: 150px;
+    margin-left:100px ;
+}
+.content1 h1{
+    font-size: 40px;
+}
+.content1 p{
+    width: 600px;
+    font-size: 18px;
+    color: rgba(0, 255, 255, 0.788);
+    margin-top: 30px;
+    line-height: 25px;
+}
+.education{
+    margin-top: 25px;
+    display: flex; 
+    
+}
+.education h2{
+    background-color: rgba(156, 142, 168, 0.089);
+    width: 300px;
+    height: 55px;
+    margin: 5px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+.education i{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.education h2:hover{
+    box-shadow: 0px 0px 5px aliceblue;   
+}
+.skills{
+    padding-top: 10px;
+}
+.skills-card1{
+    margin-top: 50px;
+    display: flex;
+    margin: 10px;
+    margin-left: 350px;
+}
+.skills-card1 img{
+    background-color: rgba(156, 142, 168, 0.089);
+    margin: 10px;
+    padding: 25px;
+    width: 90px;
+    height: 50px;
+    border-radius: 10px;
+}
+.skills-card1 p{
+    background-color: rgba(156, 142, 168, 0.089);
+    width: 60px;
+    padding: 10px;
+    margin-left: 40px;
+    text-align: center;
+    border-radius: 15px;
+}
+.skills-card1 img:hover{
+    box-shadow: 0px 0px 5px aliceblue;
+}
+.skills h1{
+    margin-top: 100px;
+    margin-left: 350px;
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+.Project{
+    margin-top: 150px;
+    padding-top: 10px;
+}
+.project1{   
+    display: flex;
+    justify-content: center;
+}
+.project1 img{
+    background-color: rgba(156, 142, 168, 0.089);
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;
+    height: 350px;
+}
+.Project h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.project1 p{
+    width: 420px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-indent: 20px;
+}
+.project1 a{
+    text-decoration: none;
+    margin-left: 340px;
+    color: blue;
+    line-height: 25px;
+}
+.project1 img:hover{
+    border: 1px solid aliceblue;
+    box-shadow: 0px 0px 5px aliceblue;
+}
+.details p{
+    text-align:start;
+}
+.contact{
+    margin-top: 150px;
+    padding-top:100px;
+    padding-bottom: 100px;
+    display: flex;
+}
+.contact-left{
+    margin-left: 120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contact-left h1{
+    margin-bottom:40px;
+    margin-left: 30px;
+    font-size: 50px;
+}
+.contact-left h3,p{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.contact-left a{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.contact-right{
+    margin-left: 100px;
+    
+}
+.contact-left span{
+    color: rgba(203, 203, 235, 0.863);
+}
+.contact-right input{
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    border: 1px solid cornsilk;
+    border-radius: 10px;
+}
+.contact-right textarea{
+    padding: 5px;
+    margin-left:10px;
+    width: 600px;
+    height: 90px;
+    border: 1px solid cornsilk;
+    border-radius: 10px;
+    
+}
+.contact-right button{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    background:radial-gradient(rgb(142, 172, 199),rgba(85, 31, 231, 0.534));
+}
+.contact-right input:hover,textarea:hover{
+    box-shadow: 0px 0px 5px aliceblue;
+}
+hr{
+    margin-top: 150px;
+}
+.mqc{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.mqc img{
+    width: 800px;
+    height: 600px;
+    margin-left: 240px;
+}
+.project-details{
+    margin-left: 70px;
+}
+.project-details h1{
+    margin-top: 50px;
+    color: rgba(203, 203, 235, 0.863);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.project-details p{
+    width: 900px;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+.project-details li{
+    margin-top: 20PX;
+    margin-left: 20px;
+    list-style-type: none;
+}
+.para1{
+    text-transform: capitalize;
+    text-indent: 40px;
+}
+.title1 h1{
+    text-align: center;
+    font-size: 30px;
+}
+.Technologies{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content:center;
+    margin-right: 10px;
+    
+}
+.Technologies p{
+    background-color:rgba(156, 142, 168, 0.089);
+    padding: 6px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+.project-details  button{
+    margin-top: 40px;
+    height: 40px;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    background:radial-gradient(rgb(142, 172, 199),rgba(85, 31, 231, 0.534));
+}
+.project-details button a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    background:radial-gradient(rgb(142, 172, 199),rgba(85, 31, 231, 0.534));
+}
+.project-details button i{
+    background:radial-gradient(rgb(142, 172, 199),rgba(85, 31, 231, 0.534));
+}
+.Technologies p:hover{
+    box-shadow: 0px 0px 5px aliceblue; 
+}
+.icon1{
+    display: flex;
+    gap: 15px;
+    margin-left: 70px;
+    margin-bottom: 100px;
+
+}
+.icon1 a{
+    width: 20px;
+    text-align: center;
+    margin:5px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px aliceblue;
+}
+.icon1 i{
+    color: aliceblue;
+}
+footer{
+    background-color:rgba(156, 142, 168, 0.089);
+    color: white;
+    text-align: center;
+}
