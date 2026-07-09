@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.log {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: 100vh;
+
+}
+.Sigup h1{
+    margin-left: 100px;
+}
+.Sigup,.login,.forget{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.171);
+    bottom: 600px;
+    left: 550px;
+    color:black;
+    font-size: large;
+    width: 300px;
+    padding-left:25px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 5px black;
+    animation-name: log;
+    animation-duration: 3s;
+    transition-duration: 2s;
+}
+@keyframes log {
+    0%{
+        bottom: 0;
+    }  
+}
+
+.Sigup label,.forget label{
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+.Sigup input,.forget input{
+    font-size: 20px;
+    margin: 5px;
+    width:250px;
+    height: 28px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+p{
+    font-size: 12px;
+    margin-left: 48px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+p a{
+    text-decoration: none;
+    color: black;
+}
+p a:hover{
+    color: blue;
+}
+button{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color:rgba(137, 43, 226, 0.699);
+}
+button a{
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+}
+input:hover{
+    box-shadow: 0px 0px 5px black;
+}
+.login h1{
+     margin-left: 100px;
+     padding-bottom: 30px;
+}
+.login {
+    bottom: 500px;
+}
+.login h1{
+    position: relative;
+    right: 10px;
+}
+.login label{
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+.login input{
+    font-size: 20px;
+    margin: 5px;
+    width:250px;
+    height: 28px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.forget{
+    bottom: 500px;
+}
+.fd{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 150px;
+}
+.fd:hover{
+    color: blue;
+}
+.as{
+    margin-top: 10px;
+}
+.fp{
+    position: relative;
+    margin-top: 2px;
+    padding-bottom:10px;
+    text-align: center;
+    right: 10px;
+    font-size: 25px;
+}
+#otp{
+    width: 100px;
+    height: 30px;
+}
+#otpbtn{
+    width: 100px;
+}
+#sumbit{
+    margin-top:px;
+}
