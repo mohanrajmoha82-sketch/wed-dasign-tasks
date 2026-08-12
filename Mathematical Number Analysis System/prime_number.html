@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Prime Number</title>
+     <link rel="stylesheet" href="intex.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+     <section>
+          <div class="ans_title">
+               <h1 class="ans_title">Prime Number <br> Checker </h1>
+               <p>Unlock the secrets of mathematical indivisibility. Enter <br> any integer to discover its cosmic
+                    primality.</p>
+          </div>
+          <div class="ans">
+               <form action="" name="primeForm">
+                    <input type="text" name="num" id="num" placeholder="Enter the Number"> <br>
+                    <button type="button" onclick="validate()">Check Number <i class="fa fa-paper-plane"
+                              aria-hidden="true"></i></button>
+                    <button> <a href="home.html"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back to
+                              Dashboard</a> </button>
+               </form>
+
+               <h3 id="prime">Answer</h3>
+          </div>
+     </section>
+
+     <script>
+          function validate() {
+               let a = document.primeForm.num.value;
+               let b = 0;
+               if(a ==""){
+                    document.getElementById("prime").innerHTML = "Enter a Number";
+                    return;
+               }
+               if (isNaN(a)){
+                    document.getElementById("prime").innerHTML = "Enter a valid Number";
+                    return;
+               }
+               if(a <= 0){
+                    document.getElementById("prime").innerHTML = "Not a Prime Number";
+                    return;
+               }
+               for (let i = 2; i <= a / 2; i++) {
+                    if (a % i == 0) {
+                         b++;
+                    }
+               }
+               if (b == 0) {
+                    document.getElementById("prime").innerHTML = "Prime Number";
+               }
+               else if (b =! 0 ) {
+                    document.getElementById("prime").innerHTML = "Not a Prime Number";
+               }
+          }
+     </script>
+
+</body>
+
+</html>

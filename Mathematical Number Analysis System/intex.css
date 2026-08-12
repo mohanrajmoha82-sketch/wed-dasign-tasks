@@ -1,0 +1,173 @@
+body {
+    align-items: center;
+    background: radial-gradient(circle at 50% 50%, #2e0835 0%, #121414 100%);
+    color: white;
+    animation-name: next_page;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes next_page {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* logo */
+.Website_name {
+    user-select: none;
+}
+
+.Website_name span {
+    display: inline-block;
+    background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 4px;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: calc(0.1s*var(--l));
+}
+
+@keyframes logo {
+    0% {
+        transform: translateY(0)scale(1);
+    }
+
+    50% {
+        transform: translateY(-22px) scale(1.12);
+    }
+
+    100% {
+        transform: translateY(0)scale(1);
+    }
+}
+
+
+
+/* Home Page */
+
+.home_title {
+    text-align: center;
+    margin: 50px;
+    color: antiquewhite;
+    font-family: cursive;
+    letter-spacing: 12px;
+}
+
+.btn {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5;
+}
+
+.btn a {
+    margin-top: 100px;
+    color: white;
+}
+
+.btn button {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn button:hover {
+    background: rgba(189, 16, 224, 0.2);
+    border-color: rgba(189, 16, 224, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 2px 30px rgba(189, 16, 224, 0.3);
+    cursor: pointer;
+}
+
+/* answer Page */
+.ans_title>h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(185, 185, 238, 0.87);
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.ans_title>p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.692);
+}
+
+.ans {
+    margin-top: 30px;
+    margin-left: 430px;
+    width: 450px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.39);
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.035);
+    text-align: center;
+}
+
+.ans input {
+    width: 370px;
+    height: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 19px;
+    color: rgba(252, 252, 252, 0.849);
+    background-color: transparent;
+    border: 1px solid rgba(245, 222, 179, 0.137);
+}
+
+.ans form button {
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.164);
+    border: 1px solid rgba(0, 0, 0, 0.336);
+
+}
+
+.ans form a {
+    color: rgba(255, 255, 255, 0.781);
+    text-decoration: none;
+
+}
+
+.ans h3 {
+    padding-top: 20px;
+    margin-left: 65px;
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    border: 1px dashed rgba(245, 222, 179, 0.205);
+    color: rgba(240, 248, 255, 0.856);
+    animation-name: ans;
+    animation-duration: 2s;
+    border-radius: 10px;
+}
+
+@keyframes ans {
+    0% {
+        color: transparent;
+    }
+}
